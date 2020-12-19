@@ -2,7 +2,7 @@
     <div>
         <v-card>
             <v-card-title>
-                Customer's Order
+                Users
                 <v-spacer></v-spacer>
                 <v-text-field
                         v-model="search"
@@ -41,7 +41,8 @@
 import axios from 'axios';
 import {API_URL} from '../../common/config';
 import {BIcon} from 'bootstrap-vue';
-const url = API_URL + '/v1/api/admin/list/';
+import datetime from 'node-datetime';
+const url = API_URL + '/api/v1/users';
 const token = localStorage.getItem('authUser');
 export default {
   name: "dashboard",
@@ -53,39 +54,28 @@ export default {
             search: '',
             headers: [
                 {text: 'No', align: 'left', sortable: false, value: 'no'},
-                { text: 'Sender', value: 'sender' },
-                { text: 'Receiver', value: 'receiver' },
-                {text: 'Type', value: 'type'},
-                {text: 'Purpose', value: 'purpose'},
-                {text: 'Service', value: 'service'},
-                { text: 'Quantity', value: 'quantity' },
-                { text: 'Volume', value: 'volume' },
-                {text: 'Weight', value: 'weight'},
-                {text: 'Price', value: 'price'}
+                { text: 'Name', value: 'name' },
+                { text: 'Email', value: 'email' },
+                {text: 'Date', value: 'date'}
             ],
             rows: [],
             keyIndex: 0,
         }
     },
     created () {
-      axios.get(url + 'getList', {headers: {
+      axios.get(url, {headers: {
               'Authorization': token
           }
       }).then(res => {
           console.log(res['data']);
           let rows = [];
           for (let item of res['data']) {
+            var updatedAt = datetime.create(item.updatedAt);
               const row =  {
                   no: this.keyIndex + 1,
-                  sender: item.sender.country,
-                  receiver: item.receiver.country,
-                  type : item.data.type,
-                  purpose: item.data.purpose,
-                  service: item.data.service,
-                  quantity: item.data.items,
-                  volume: item.data.volume + '(m3)',
-                  weight: item.data.weights + '(kg)',
-                  price: "Rp " + item.data.price
+                  name: item.firstName + ' ' + item.lastName,
+                  email: item.email,
+                  date: updatedAt.format('n D, Y')
               };
               rows.push(row);
               this.keyIndex++;

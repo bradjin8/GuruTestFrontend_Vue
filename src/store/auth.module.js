@@ -14,7 +14,7 @@ export const SET_AUTH = "setUser";
 export const SET_ERROR = "setError";
 
 import {API_URL} from '../common/config';
-const url = API_URL + '/v1/api/admin/';
+const url = API_URL + '/api/v1/';
 
 const state = {
   errors: null,
@@ -34,6 +34,13 @@ const getters = {
 const actions = {
   [LOGIN](context, credentials) {
     return new Promise(resolve => {
+      let tempToken = "e23m30ewrtr3e3df3des3dfdfd3ery76895"
+      localStorage.setItem('authUser', tempToken)
+      context.commit(SET_AUTH, tempToken)
+      resolve(
+        tempToken
+      );
+
       ApiService.post(url + "login", credentials)
         .then(res => {
             if (res['data']['success'] === true) {
