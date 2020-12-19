@@ -1,0 +1,35 @@
+// header base skins
+.kt-header-base-light {
+  @import "../../../layout/header/skins/base/light.scss";
+}
+
+.kt-header-base-dark {
+  @import "../../../layout/header/skins/base/dark.scss";
+}
+
+// header menu skins
+.kt-header-menu-light {
+  @import "../../../layout/header/skins/menu/light.scss";
+}
+
+.kt-header-menu-dark {
+  @import "../../../layout/header/skins/menu/dark.scss";
+}
+
+// brand skins
+.kt-brand-dark {
+  @import "../../../layout/brand/skins/dark.scss";
+}
+
+.kt-brand-light {
+  @import "../../../layout/brand/skins/light.scss";
+}
+
+// aside skins
+.kt-aside-dark {
+  @import "../../../layout/aside/skins/dark.scss";
+}
+
+.kt-aside-light {
+  @import "../../../layout/aside/skins/light.scss";
+}

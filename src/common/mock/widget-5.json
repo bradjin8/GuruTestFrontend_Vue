@@ -1,0 +1,23 @@
+[
+	{
+		"title": "Great Logo Designn",
+		"image": "assets/media/products/product27.jpg",
+		"text": "Metronic admin themes.",
+		"info": "<span>Author:</span><span class=\"kt-font-info\">Keenthemes</span><span>Released:</span><span class=\"kt-font-info\">23.08.17</span>.",
+		"stats": "<div class=\"kt-widget5__stats\">\t<span class=\"kt-widget5__number\">19,200</span>\t<span class=\"kt-widget5__sales\">sales</span></div><div class=\"kt-widget5__stats\">\t<span class=\"kt-widget5__number\">1046</span>\t<span class=\"kt-widget5__votes\">votes</span></div>"
+	},
+	{
+		"title": "Branding Mockup",
+		"image": "assets/media/products/product22.jpg",
+		"text": "Metronic bootstrap themes.",
+		"info": "<span>Author:</span>\t<span class=\"kt-font-info\">Fly themes</span>\t<span>Released:</span>\t<span class=\"kt-font-info\">23.08.17</span>",
+		"stats": "<div class=\"kt-widget5__stats\"><span class=\"kt-widget5__number\">24,583</span><span class=\"kt-widget5__sales\">sales</span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"kt-widget5__stats\"><span class=\"kt-widget5__number\">3809</span><span class=\"kt-widget5__votes\">votes</span>\n\t\t\t\t\t\t\t</div>"
+	},
+	{
+		"title": "Metronic bootstrap themes",
+		"image": "assets/media/products/product15.jpg",
+		"text": "Metronic admin themes.Lorem Ipsum Amet.",
+		"info": "<span>Author:</span>\t<span class=\"kt-font-info\">Fly themes</span>\t<span>Released:</span>\t<span class=\"kt-font-info\">23.08.17</span>",
+		"stats": "<div class=\"kt-widget5__stats\"><span class=\"kt-widget5__number\">210,054</span><span class=\"kt-widget5__sales\">sales</span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"kt-widget5__stats\"><span class=\"kt-widget5__number\">1103</span><span class=\"kt-widget5__votes\">votes</span>\n\t\t\t\t\t\t\t</div>"
+	}
+]

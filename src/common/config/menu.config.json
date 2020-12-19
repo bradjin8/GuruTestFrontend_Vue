@@ -1,0 +1,21 @@
+{
+  "header": {
+    "self": {},
+    "items": [
+
+    ]
+  },
+  "aside": {
+    "self": {},
+    "items": [
+      {
+        "title": "Customer's Order",
+        "root": true,
+        "icon": "flaticon2-architecture-and-city",
+        "page": "dashboard",
+        "translate": "MENU.Customers",
+        "bullet": "dot"
+      }
+    ]
+  }
+}

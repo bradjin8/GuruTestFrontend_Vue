@@ -1,0 +1,52 @@
+[
+	{
+		"image": "assets/media/users/100_4.jpg",
+		"username": "Anna Strong",
+		"text": "Visual Designer, Google Inc.",
+		"button": {
+			"style": "btn-sm btn-label-brand btn-bold",
+			"text": "Follow",
+			"link": "#"
+		}
+	},
+	{
+		"image": "assets/media/users/100_14.jpg",
+		"username": "Milano Esco",
+		"text": "Product Designer, Apple Inc.",
+		"button": {
+			"style": "btn-sm btn-label-warning btn-bold",
+			"text": "Follow",
+			"link": "#"
+		}
+	},
+	{
+		"image": "assets/media/users/100_11.jpg",
+		"username": "Nick Bold",
+		"text": "Web Developer, Facebook Inc.",
+		"button": {
+			"style": "btn-sm btn-label-danger btn-bold",
+			"text": "Follow",
+			"link": "#"
+		}
+	},
+	{
+		"image": "assets/media/users/100_1.jpg",
+		"username": "Wiltor Delton",
+		"text": "Project Manager, Amazon Inc.",
+		"button": {
+			"style": "btn-sm btn-label-success btn-bold",
+			"text": "Follow",
+			"link": "#"
+		}
+	},
+	{
+		"image": "assets/media/users/100_5.jpg",
+		"username": "Nick Stone",
+		"text": "Visual Designer, Github Inc.",
+		"button": {
+			"style": "btn-sm btn-label-primary btn-bold",
+			"text": "Follow",
+			"link": "#"
+		}
+	}
+]

@@ -1,0 +1,16 @@
+@import "~vue-material/dist/vue-material.css";
+
+// Default theme, can be removed
+@import "~vue-material/dist/theme/prebuilt/default";
+
+// Import the theme engine
+@import "~vue-material/dist/theme/engine";
+
+// Components customization
+@include md-register-theme("default", (
+    primary: #5d78ff, // The primary color of your brand
+    accent: #fd397a, // The secondary color of your brand
+));
+
+// Apply the theme
+@import "~vue-material/dist/theme/all";
